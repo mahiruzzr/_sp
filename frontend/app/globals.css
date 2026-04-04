@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen bg-[#050816] text-slate-100 antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.18), transparent 24%),
+    radial-gradient(circle at top right, rgba(168, 85, 247, 0.15), transparent 22%),
+    radial-gradient(circle at bottom center, rgba(56, 189, 248, 0.08), transparent 30%),
+    linear-gradient(180deg, #040511 0%, #060816 45%, #03040a 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.25;
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.12) 1px, transparent 1px);
+  background-size: 84px 84px;
+  mask-image: radial-gradient(circle at center, black 42%, transparent 80%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(120deg, transparent 0%, rgba(45, 212, 191, 0.05) 35%, transparent 70%),
+    linear-gradient(300deg, transparent 0%, rgba(192, 132, 252, 0.04) 40%, transparent 75%);
+  animation: drift 14s linear infinite;
+}
+
+::selection {
+  @apply bg-cyan-400 text-slate-950;
+}
+
+.prose-report h1,
+.prose-report h2,
+.prose-report h3 {
+  @apply mt-8 font-[family-name:var(--font-display)] text-cyan-100;
+}
+
+.prose-report p,
+.prose-report li {
+  @apply leading-7 text-slate-300;
+}
+
+.prose-report ul {
+  @apply ml-6 list-disc;
+}
+
+.prose-report code {
+  @apply rounded bg-slate-900/80 px-1.5 py-0.5 text-sm text-cyan-200;
+}
+
+.prose-report pre {
+  @apply overflow-x-auto rounded-2xl border border-cyan-400/20 bg-slate-950/90 p-4 text-slate-100;
+}
+
+.panel-glow {
+  box-shadow:
+    0 0 0 1px rgba(34, 211, 238, 0.18),
+    0 0 30px rgba(45, 212, 191, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.scanline {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanline::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(34, 211, 238, 0.06), transparent);
+  transform: translateY(-100%);
+  animation: scan 3.8s linear infinite;
+}
+
+@keyframes scan {
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(-2%, 0, 0);
+  }
+  50% {
+    transform: translate3d(2%, 1%, 0);
+  }
+  100% {
+    transform: translate3d(-2%, 0, 0);
+  }
+}
