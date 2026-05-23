@@ -1,0 +1,13 @@
+# 計算斐波那契數列第 10 項 (遞迴)
+def fib(n) {
+    if n <= 1 {
+        n
+    } else {
+        fib(n - 1) + fib(n - 2)
+    }
+}
+
+print("Calculating fib(10)...")
+res = fib(10)
+print("Result of fib(10) is:")
+print(res)

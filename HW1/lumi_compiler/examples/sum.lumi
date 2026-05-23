@@ -1,0 +1,20 @@
+# 迴圈計算 1 到 100 的累加和，並且示範 If-Else 作為表達式
+sum = 0
+i = 1
+while i <= 100 {
+    sum = sum + i
+    i = i + 1
+}
+
+print("Sum of 1 to 100 is:")
+print(sum)
+
+# 測試 if-else 作為表達式賦值
+status = if sum > 5000 {
+    "sum is greater than 5000"
+} else {
+    "sum is less than or equal to 5000"
+}
+
+print("Status is:")
+print(status)
