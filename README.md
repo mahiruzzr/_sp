@@ -33,7 +33,7 @@
 |------|---------|
 | **習題一 — p0 編譯器** | [`HW/`](https://github.com/mahiruzzr/_sp/tree/ba13b9b715f36a9b9d0ff63f95c6b7e59a69af7d/HW)（`p0.c` + README） |
 | **習題二 — lumi 編譯器** | [`HW1/lumi_compiler/`](https://github.com/mahiruzzr/_sp/tree/1b7b34dce5c89fdfc20a901b434dc697fa7e6e5a/HW1/lumi_compiler)（6 個 Python 模組） |
-| **習題三 — 課程倉儲** | [`_sp`]((https://github.com/mahiruzzr/_sp/tree/main))（Repo 根目錄 + README） |
+| **習題三 — 課程倉儲** | [`_sp`](https://github.com/mahiruzzr/_sp/tree/main)（Repo 根目錄 + README） |
 | **習題四 — Agent 筆記** | [`HW2/`](https://github.com/mahiruzzr/_sp/tree/67200492d95e54da96c7f6b06a882bdecca0a7d0/HW2)（`system_programming_agent_book.MD`） |
 | **習題五 — 多執行緒** | [`HW3/`](https://github.com/mahiruzzr/_sp/tree/9ae128b2d2242c59924317f2366c63de3040d70d/HW3)（`1.cpp` ~ `3.cpp` + README） |
 | **習題六 — 行程與檔案** | [`HW4/`](https://github.com/mahiruzzr/_sp/tree/c9fb2872536b4a59710b4013d042907a7220b066/HW4)（6 個 C 程式 + Makefile + README） |
@@ -72,7 +72,7 @@
 
 ### 習題三 — 課程倉儲與筆記
 
-- **連結**：[`mahiruzzr/_sp`]((https://github.com/mahiruzzr/_sp.git](https://github.com/mahiruzzr/_sp/tree/main)))
+- **連結**：[`mahiruzzr/_sp`](https://github.com/mahiruzzr/_sp.git](https://github.com/mahiruzzr/_sp/tree/main))
 - **內容**：GitHub 倉儲建立、課程 README 與習題目錄結構
 
 ### 習題四 — 系統程式 Agent 筆記
